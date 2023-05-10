@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="encabezado">
+            <h1 class="title">Desencriptador/</h1>
+            <h1 class="title">Encriptador</h1>
+    </div>
+
+    <div class="cuerpo"> 
+        
+        
+        <label>
+            <i class="fa-solid fa-file-export"></i>    
+            <input class="a" type="text" id="phrase" placeholder="Ingrese la frase"
+            onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode ==32)" 
+            min="1" autofocus>
+            
+        </label>
+        
+        <button class= "button" id="encriptar">Encriptar</button>
+        <button class= "button" id="desencriptar">Desencriptar</button>
+        
+        <label>
+            <i class="fa-solid fa-gears"></i>
+            <input class ="a" type="text" id="result" placeholder="Resultado" disabled>
+
+        </label>
+        <button class= "button" id="copy">Copiar resultado</button>
+    </div>   
+     
+    <div id="message" style="display:none; ">
+        <h1 class="sub">Frase copiada</h1>
+        <label>
+            <i class="fa-solid fa-clipboard"></i>
+            <input class="b" type="text" id="clipboard" disabled>
+        </label>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+
+</html>
+
+
